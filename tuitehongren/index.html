@@ -1,0 +1,967 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>推特红人小小绘-插画创作者档案与作品动向</title>
+<meta name="description" content="推特红人小小绘是活跃在X平台的插画创作者，本页整理其2026年10月至11月的作品更新、约稿规则变化、粉丝互动记录与画风解析，附代表作品时间线与常见问题。">
+<meta name="keywords" content="推特红人小小绘">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f26d4f'/%3E%3Cpath d='M16 44c6-14 12-20 18-20 5 0 8 3 8 8 0 7-6 12-13 12h-5' stroke='%23fff6ef' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "推特红人小小绘",
+  "description": "推特红人小小绘的作品档案、更新动向与画风解析。",
+  "inLanguage": "zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "小小绘的约稿档期一般排到多久以后？",
+      "acceptedAnswer": {"@type": "Answer", "text": "截至2026年11月8日，X主页置顶显示的排期表已排到2027年1月中旬，单张半身彩稿从下单到交稿约9至12周。"}
+    },
+    {
+      "@type": "Question",
+      "name": "小小绘使用什么绘画设备和软件？",
+      "acceptedAnswer": {"@type": "Answer", "text": "公开的绘图直播录屏中可以确认使用iPad Pro 12.9英寸配合Procreate，线稿笔刷为自定义的干墨笔刷，另有一台台式机用于后续排版。"}
+    },
+    {
+      "@type": "Question",
+      "name": "小小绘的原创角色有设定集吗？",
+      "acceptedAnswer": {"@type": "Answer", "text": "有。2026年10月25日发布的电子设定集《雾港五号》共42页，收录6个原创角色的三视图与对话片段，在Booth平台以3000日元上架。"}
+    },
+    {
+      "@type": "Question",
+      "name": "为什么近期作品线条比2025年更粗？",
+      "acceptedAnswer": {"@type": "Answer", "text": "2026年9月的直播中作者说明把干墨笔刷尺寸从4px调到6.5px，原因是印刷A3尺寸时细线在铜版纸上容易发虚。"}
+    },
+    {
+      "@type": "Question",
+      "name": "转载小小绘的作品需要满足哪些条件？",
+      "acceptedAnswer": {"@type": "Answer", "text": "X主页简介注明非商业转载需保留署名与原文链接，商业用途须先通过私信提交用途说明，衍生周边一律另行授权。"}
+    }
+  ]
+}
+</script>
+<style>
+:root{
+  --ink:#241f26;
+  --ink-soft:#4d4650;
+  --paper:#fbf7f2;
+  --paper-2:#f3ece3;
+  --card:#ffffff;
+  --line:#e3d9cc;
+  --brand:#c2452d;
+  --brand-deep:#8f2f1d;
+  --brand-soft:#fbe4dc;
+  --accent:#2f5d62;
+  --accent-soft:#ddebe9;
+  --gold:#a97b23;
+  --radius:14px;
+  --radius-s:8px;
+  --shadow:0 2px 10px rgba(52,32,20,.07);
+  --shadow-h:0 6px 18px rgba(52,32,20,.11);
+  --space:clamp(16px,2.4vw,28px);
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",sans-serif;
+  --ann-h:38px;
+  --head-h:64px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--ann-h) + var(--head-h) + 12px)}
+body{
+  margin:0;font-family:var(--font);color:var(--ink);background:var(--paper);
+  line-height:1.75;font-size:16px;-webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:var(--brand-deep);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700}
+p{margin:0 0 .9em}
+ul,ol{margin:0 0 1em;padding-left:1.25em}
+li{margin:.25em 0}
+.wrap{width:min(1180px,100% - 32px);margin-inline:auto}
+.skip{position:absolute;left:-9999px;top:0;background:var(--brand);color:#fff;padding:10px 16px;z-index:200;border-radius:0 0 10px 0}
+.skip:focus{left:0}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+
+/* 公告条 + 页头 吸顶 */
+.sticky-stack{position:sticky;top:0;z-index:100}
+.announce{
+  background:linear-gradient(90deg,var(--brand-deep),var(--brand));
+  color:#fff8f3;font-size:13.5px;height:var(--ann-h);
+  display:flex;align-items:center;overflow:hidden;
+}
+.announce .wrap{display:flex;align-items:center;gap:10px;min-width:0}
+.announce .pip{flex:0 0 auto;background:#fff8f3;color:var(--brand-deep);font-weight:700;font-size:11.5px;padding:1px 7px;border-radius:20px;letter-spacing:.02em}
+.announce .ticker{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.announce .ticker b{font-weight:600}
+.announce a{color:#ffe4d8;text-decoration:underline;text-underline-offset:2px}
+
+.site-head{background:rgba(251,247,242,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);height:var(--head-h)}
+.site-head .wrap{height:100%;display:flex;align-items:center;gap:18px}
+.brand{display:flex;align-items:center;gap:10px;flex:0 0 auto;color:var(--ink);font-weight:800;font-size:19px;letter-spacing:.01em}
+.brand:hover{text-decoration:none}
+.brand svg{width:36px;height:36px;flex:0 0 auto}
+.brand .bt{line-height:1.1}
+.brand .bt small{display:block;font-size:10.5px;font-weight:500;color:var(--ink-soft);letter-spacing:.14em;margin-top:2px}
+.nav{display:flex;gap:2px;margin-left:auto;align-items:center;flex-wrap:nowrap;min-width:0}
+.nav a{font-size:14.5px;color:var(--ink-soft);padding:8px 10px;border-radius:8px;white-space:nowrap;font-weight:500}
+.nav a:hover{background:var(--paper-2);color:var(--brand-deep);text-decoration:none}
+.head-tools{display:flex;align-items:center;gap:8px;flex:0 0 auto}
+.search{display:flex;align-items:center;border:1px solid var(--line);background:#fff;border-radius:22px;padding:3px 4px 3px 12px;transition:border-color .2s}
+.search:focus-within{border-color:var(--brand)}
+.search input{border:0;background:transparent;font:inherit;font-size:13.5px;width:118px;padding:5px 2px;color:var(--ink);outline:none}
+.search button{border:0;background:var(--brand);color:#fff;width:28px;height:28px;border-radius:50%;cursor:pointer;display:grid;place-items:center;font-size:13px}
+.search button:hover{background:var(--brand-deep)}
+.menu-btn{display:none;border:1px solid var(--line);background:#fff;border-radius:10px;width:40px;height:40px;cursor:pointer;padding:0;color:var(--ink)}
+.menu-btn span{display:block;width:18px;height:2px;background:currentColor;margin:3.5px auto;border-radius:2px;transition:.2s}
+.menu-btn[aria-expanded="true"] span:nth-child(1){transform:translateY(5.5px) rotate(45deg)}
+.menu-btn[aria-expanded="true"] span:nth-child(2){opacity:0}
+.menu-btn[aria-expanded="true"] span:nth-child(3){transform:translateY(-5.5px) rotate(-45deg)}
+
+/* 首屏 */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line);background:
+  radial-gradient(1000px 380px at 88% -10%, var(--brand-soft), transparent 70%),
+  radial-gradient(700px 320px at 0% 110%, var(--accent-soft), transparent 65%),
+  var(--paper);
+}
+.hero-inner{display:grid;grid-template-columns:1.15fr .85fr;gap:var(--space);align-items:center;padding:clamp(28px,4.6vw,58px) 0 clamp(30px,4vw,52px)}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:600;letter-spacing:.1em;color:var(--brand-deep);background:#fff;border:1px solid var(--line);padding:5px 12px;border-radius:30px;margin-bottom:16px}
+.hero-tag i{width:7px;height:7px;border-radius:50%;background:var(--brand);display:inline-block}
+.hero h1{font-size:clamp(30px,5vw,52px);letter-spacing:-.01em;line-height:1.15;color:var(--ink)}
+.hero h1 em{font-style:normal;color:var(--brand-deep);position:relative}
+.hero h1 em::after{content:"";position:absolute;left:0;right:0;bottom:.06em;height:.28em;background:var(--brand-soft);z-index:-1;border-radius:3px}
+.hero .lead{margin-top:16px;font-size:16.5px;color:var(--ink-soft);max-width:33em}
+.hero .lead b{color:var(--ink);font-weight:600}
+.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.btn{display:inline-flex;align-items:center;gap:7px;padding:10px 20px;border-radius:26px;font-size:14.5px;font-weight:600;border:1px solid transparent;transition:transform .18s,box-shadow .18s,background .18s}
+.btn-primary{background:var(--brand);color:#fff;box-shadow:var(--shadow)}
+.btn-primary:hover{background:var(--brand-deep);text-decoration:none;transform:translateY(-2px)}
+.btn-ghost{background:#fff;color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--brand);color:var(--brand-deep);text-decoration:none;transform:translateY(-2px)}
+.hero-stats{display:flex;gap:clamp(14px,3vw,34px);margin-top:26px;flex-wrap:wrap}
+.hero-stats div{border-left:2px solid var(--brand-soft);padding-left:12px}
+.hero-stats strong{display:block;font-size:21px;color:var(--brand-deep);line-height:1.2}
+.hero-stats span{font-size:12.5px;color:var(--ink-soft)}
+
+/* 原创视觉：非对称插画构图 */
+.hero-art{position:relative;aspect-ratio:1/1;max-width:420px;justify-self:end;width:100%}
+.hero-art .board{position:absolute;inset:6% 4% 6% 8%;background:linear-gradient(150deg,#fff,#fdf1ea 60%,#f6e5d9);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow-h);transform:rotate(-2.4deg)}
+.hero-art .frame{position:absolute;inset:16% 12% 20% 16%;background:var(--paper-2);border:1px solid var(--line);border-radius:14px;transform:rotate(3deg);overflow:hidden}
+.hero-art .frame::before{content:"";position:absolute;left:-12%;top:16%;width:124%;height:34%;background:linear-gradient(135deg,var(--accent-soft),transparent 70%);transform:rotate(-8deg)}
+.hero-art .frame::after{content:"";position:absolute;right:-18%;bottom:-10%;width:70%;height:62%;background:radial-gradient(circle at 40% 40%,var(--brand-soft),transparent 70%);border-radius:50%}
+.hero-art .chip{position:absolute;background:#fff;border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow);font-size:12px;font-weight:600;color:var(--ink-soft);padding:6px 10px;white-space:nowrap}
+.hero-art .chip b{color:var(--brand-deep)}
+.hero-art .c1{left:0;top:4%;transform:rotate(-4deg)}
+.hero-art .c2{right:1%;top:34%;transform:rotate(3deg)}
+.hero-art .c3{left:4%;bottom:7%;transform:rotate(2deg)}
+.hero-art svg{position:absolute;inset:22% 18% 26% 20%;width:60%;height:52%;transform:rotate(1deg)}
+
+/* 主体布局 */
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(20px,3vw,40px);padding:clamp(26px,4vw,50px) 0}
+.main-col{min-width:0}
+.side-col{min-width:0}
+section.anchor{scroll-margin-top:calc(var(--ann-h) + var(--head-h) + 14px)}
+.block{margin-bottom:clamp(30px,4.4vw,54px)}
+.block-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:6px}
+.block-head h2{font-size:clamp(20px,2.6vw,26px);letter-spacing:-.01em}
+.block-head .idx{font-size:12px;font-weight:700;color:var(--brand);letter-spacing:.14em}
+.sub{font-size:14px;color:var(--ink-soft);margin:0 0 18px;max-width:44em}
+.sub b{color:var(--ink);font-weight:600}
+
+/* 分类入口 chips */
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips a{background:#fff;border:1px solid var(--line);padding:7px 14px;border-radius:30px;font-size:13.5px;color:var(--ink-soft);font-weight:500}
+.chips a:hover{border-color:var(--brand);color:var(--brand-deep);background:var(--brand-soft);text-decoration:none}
+.chips a b{color:var(--brand-deep);font-weight:700;margin-left:4px;font-size:12px}
+
+/* 领域概览 */
+.overview{display:grid;grid-template-columns:1.3fr 1fr;gap:14px}
+.ov-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;box-shadow:var(--shadow)}
+.ov-card h3{font-size:15px;color:var(--brand-deep);margin-bottom:8px}
+.ov-card p{font-size:14px;color:var(--ink-soft);margin:0}
+.ov-card p+p{margin-top:6px}
+.ov-facts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.fact{background:var(--paper-2);border-radius:var(--radius-s);padding:10px 12px;border:1px solid var(--line)}
+.fact span{display:block;font-size:11.5px;color:var(--ink-soft);letter-spacing:.04em}
+.fact strong{font-size:15px;color:var(--ink)}
+
+/* 精选网格卡片 */
+.card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-h)}
+.card .thumb{aspect-ratio:16/10;overflow:hidden;background:var(--paper-2)}
+.card .thumb img{width:100%;height:100%;object-fit:cover}
+.card .body{padding:12px 14px 14px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card h3{font-size:15px;line-height:1.45}
+.card .meta{font-size:12px;color:var(--ink-soft);margin-top:auto}
+.card .tag{display:inline-block;font-size:11.5px;background:var(--brand-soft);color:var(--brand-deep);padding:2px 8px;border-radius:20px;font-weight:600;align-self:flex-start}
+.card p{font-size:13.5px;color:var(--ink-soft);margin:0}
+
+/* 紧凑列表 */
+.updates{border:1px solid var(--line);border-radius:var(--radius);background:#fff;overflow:hidden}
+.upd{display:grid;grid-template-columns:88px 1fr auto;gap:12px;align-items:baseline;padding:13px 18px;border-bottom:1px solid var(--line);font-size:14px}
+.upd:last-child{border-bottom:0}
+.upd time{font-size:12.5px;color:var(--brand-deep);font-weight:600;font-variant-numeric:tabular-nums}
+.upd .txt{color:var(--ink-soft);min-width:0}
+.upd .txt b{color:var(--ink);font-weight:600}
+.upd .where{font-size:11.5px;color:var(--accent);background:var(--accent-soft);padding:2px 8px;border-radius:20px;font-weight:600;white-space:nowrap}
+.upd:hover{background:#fdf9f4}
+
+/* 深度解析：分栏正文 */
+.deep{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:clamp(18px,3vw,30px);box-shadow:var(--shadow)}
+.deep .kicker{font-size:12px;font-weight:700;letter-spacing:.14em;color:var(--brand);margin-bottom:6px}
+.deep h2{font-size:clamp(21px,2.8vw,27px);margin-bottom:8px}
+.deep .standfirst{font-size:15px;color:var(--ink-soft);border-left:3px solid var(--brand);padding-left:14px;margin:14px 0 20px}
+.deep h3{font-size:17px;margin:24px 0 8px;padding-top:14px;border-top:1px dashed var(--line)}
+.deep h3:first-of-type{border-top:0;padding-top:0;margin-top:8px}
+.deep p{font-size:15px;color:var(--ink)}
+.deep .quote{background:var(--paper-2);border-radius:var(--radius-s);border-left:3px solid var(--accent);padding:12px 16px;font-size:14.5px;color:var(--ink-soft);margin:14px 0}
+.deep .quote cite{display:block;font-style:normal;font-size:12.5px;color:var(--ink-soft);margin-top:6px}
+.verdict{background:linear-gradient(180deg,#fff,var(--brand-soft));border:1px solid #f0c8bb;border-radius:var(--radius-s);padding:14px 16px;margin-top:18px}
+.verdict h4{font-size:14.5px;color:var(--brand-deep);margin-bottom:6px}
+.verdict p{font-size:14px;margin:0}
+.cols2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.mini-table{width:100%;border-collapse:collapse;font-size:13.5px;margin:8px 0 4px}
+.mini-table th,.mini-table td{border:1px solid var(--line);padding:7px 10px;text-align:left}
+.mini-table th{background:var(--paper-2);font-weight:600;color:var(--ink)}
+.mini-table td{color:var(--ink-soft)}
+
+/* 体验指南：编号步骤 */
+.steps{counter-reset:st;display:grid;gap:12px}
+.step{position:relative;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px 16px 62px;box-shadow:var(--shadow)}
+.step::before{counter-increment:st;content:counter(st,decimal-leading-zero);position:absolute;left:16px;top:15px;width:32px;height:32px;border-radius:50%;background:var(--brand);color:#fff;font-size:13px;font-weight:700;display:grid;place-items:center}
+.step h3{font-size:15px;margin-bottom:4px}
+.step p{font-size:13.8px;color:var(--ink-soft);margin:0}
+
+/* 对照面板 */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.panel{border:1px solid var(--line);border-radius:var(--radius);background:#fff;overflow:hidden}
+.panel h3{font-size:14.5px;padding:10px 16px;margin:0;background:var(--paper-2);border-bottom:1px solid var(--line)}
+.panel.pro h3{background:var(--accent-soft);color:#1f474b}
+.panel.con h3{background:#f6e6de;color:#7d3722}
+.panel ul{padding:12px 16px 14px 32px;margin:0;font-size:13.8px;color:var(--ink-soft)}
+.panel li{margin:4px 0}
+
+/* FAQ */
+.faq{border:1px solid var(--line);border-radius:var(--radius);background:#fff;overflow:hidden;box-shadow:var(--shadow)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq details:last-child{border-bottom:0}
+.faq summary{cursor:pointer;padding:14px 44px 14px 18px;font-size:14.8px;font-weight:600;position:relative;list-style:none;color:var(--ink)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:18px;top:50%;transform:translateY(-50%);font-size:20px;font-weight:400;color:var(--brand);line-height:1}
+.faq details[open] summary::after{content:"−"}
+.faq summary:hover{background:#fdf8f3}
+.faq .a{padding:0 18px 16px;font-size:14px;color:var(--ink-soft)}
+.faq .a p{margin:0}
+
+/* 评论 */
+.comments{display:grid;gap:12px}
+.cmt{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;box-shadow:var(--shadow)}
+.cmt header{display:flex;align-items:center;gap:9px;margin-bottom:6px;flex-wrap:wrap}
+.avatar{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-size:12.5px;font-weight:700;color:#fff;flex:0 0 auto}
+.cmt .who{font-size:13.5px;font-weight:600}
+.cmt .at{font-size:12px;color:var(--ink-soft)}
+.cmt .star{margin-left:auto;font-size:12px;color:var(--gold);font-weight:600;letter-spacing:.05em}
+.cmt p{font-size:14px;margin:0;color:var(--ink)}
+.cmt p em{font-style:normal;background:#fdf0e8;padding:0 3px;border-radius:3px}
+.cmt .ref{display:block;font-size:12px;color:var(--accent);margin-top:6px}
+
+/* 资讯双栏 */
+.news{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.news-item{background:#fff;border:1px solid var(--line);border-radius:var(--radius-s);padding:13px 15px}
+.news-item h3{font-size:14.5px;margin-bottom:5px}
+.news-item p{font-size:13px;color:var(--ink-soft);margin:0}
+.news-item time{font-size:11.5px;color:var(--brand-deep);font-weight:600}
+
+/* 推荐标签 */
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tags a{font-size:13px;border:1px solid var(--line);background:#fff;border-radius:8px;padding:6px 12px;color:var(--ink-soft)}
+.tags a:hover{background:var(--accent-soft);border-color:var(--accent);color:#1f474b;text-decoration:none}
+
+/* 时间线 */
+.timeline{position:relative;padding-left:22px;margin-top:6px}
+.timeline::before{content:"";position:absolute;left:6px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--brand-soft),var(--line))}
+.tl{position:relative;padding:0 0 16px 6px}
+.tl::before{content:"";position:absolute;left:-21px;top:7px;width:10px;height:10px;border-radius:50%;background:var(--brand);box-shadow:0 0 0 3px var(--brand-soft)}
+.tl time{font-size:12px;font-weight:700;color:var(--brand-deep);font-variant-numeric:tabular-nums}
+.tl p{font-size:13.8px;color:var(--ink-soft);margin:2px 0 0}
+.tl p b{color:var(--ink);font-weight:600}
+
+/* 侧栏 */
+.side-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;box-shadow:var(--shadow);margin-bottom:16px}
+.side-card h2{font-size:14.5px;letter-spacing:.02em;margin-bottom:10px;color:var(--brand-deep)}
+.side-nav{position:sticky;top:calc(var(--ann-h) + var(--head-h) + 16px)}
+.side-nav ul{list-style:none;padding:0;margin:0;display:grid;gap:3px}
+.side-nav a{display:block;font-size:13.8px;color:var(--ink-soft);padding:6px 10px;border-radius:8px;border-left:2px solid transparent}
+.side-nav a:hover{background:var(--paper-2);text-decoration:none;color:var(--brand-deep)}
+.side-nav a.active{color:var(--brand-deep);font-weight:600;background:var(--brand-soft);border-left-color:var(--brand)}
+.mini-list{list-style:none;padding:0;margin:0;display:grid;gap:9px}
+.mini-list li{font-size:13.3px;color:var(--ink-soft);line-height:1.55}
+.mini-list b{color:var(--ink);font-weight:600;display:block}
+.mini-list span{font-size:12px;color:var(--ink-soft)}
+.trust{list-style:none;padding:0;margin:0}
+.trust li{font-size:13.2px;padding:7px 0;border-bottom:1px dashed var(--line);color:var(--ink-soft);display:flex;gap:8px}
+.trust li:last-child{border-bottom:0}
+.trust .lv{flex:0 0 auto;font-size:11px;font-weight:700;padding:1px 7px;border-radius:20px;height:20px;display:inline-grid;place-items:center}
+.lv-a{background:#dcefe2;color:#23663b}
+.lv-b{background:#fdf0d2;color:#8a6415}
+.lv-c{background:#f6e0da;color:#8f2f1d}
+.side-note{font-size:12px;color:var(--ink-soft);margin:10px 0 0;line-height:1.6}
+
+/* 页尾 */
+.site-foot{background:#2a242b;color:#cbc2c9;margin-top:10px;padding:clamp(30px,4.4vw,52px) 0 24px;font-size:14px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:clamp(18px,3vw,36px)}
+.site-foot h3{color:#fff;font-size:14px;margin-bottom:10px;letter-spacing:.02em}
+.site-foot a{color:#cfc6cd}
+.site-foot a:hover{color:#fff}
+.site-foot .brand{color:#fff;font-size:18px}
+.site-foot .brand small{color:#a99fa6}
+.foot-pos{font-size:13.5px;color:#b3a9b0;margin:12px 0 0;line-height:1.7}
+.foot-links{list-style:none;padding:0;margin:0;display:grid;gap:6px;font-size:13.3px}
+.foot-bottom{border-top:1px solid #423a41;margin-top:26px;padding-top:16px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:12.3px;color:#9d939a}
+.sample-note{font-size:12.2px;color:#a99fa6;margin-top:14px;line-height:1.65;background:#332c34;border-radius:10px;padding:10px 14px}
+
+/* 搜索反馈 */
+.search-feedback{margin:12px 0 0;font-size:13.5px;color:var(--brand-deep);background:var(--brand-soft);border:1px solid #eec6b9;border-radius:var(--radius-s);padding:9px 14px;display:none}
+.search-feedback.on{display:block}
+
+/* 回到顶部 */
+#toTop{position:fixed;right:18px;bottom:18px;width:44px;height:44px;border-radius:50%;border:0;background:var(--brand);color:#fff;cursor:pointer;box-shadow:var(--shadow-h);display:grid;place-items:center;font-size:16px;opacity:0;pointer-events:none;transform:translateY(8px);transition:.25s;z-index:90}
+#toTop.show{opacity:1;pointer-events:auto;transform:translateY(0)}
+#toTop:hover{background:var(--brand-deep)}
+
+/* 平板 */
+@media (max-width:980px){
+  .layout{grid-template-columns:1fr}
+  .side-col{order:2}
+  .main-col{order:1}
+  .side-nav{position:static}
+  .hero-inner{grid-template-columns:1fr}
+  .hero-art{justify-self:start;max-width:340px;margin-top:6px}
+  .card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .overview{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .nav{display:none;position:absolute;top:calc(var(--ann-h) + var(--head-h));left:0;right:0;background:var(--paper);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;padding:10px 16px 16px;gap:2px;box-shadow:var(--shadow-h);max-height:70vh;overflow:auto}
+  .nav.open{display:flex}
+  .nav a{padding:11px 10px;font-size:15px}
+  .menu-btn{display:block}
+  .head-tools{margin-left:auto}
+  .search input{width:96px}
+  .cols2{grid-template-columns:1fr}
+}
+/* 手机 */
+@media (max-width:640px){
+  .wrap{width:calc(100% - 24px)}
+  .announce{font-size:12px}
+  .announce .pip{display:none}
+  .card-grid{grid-template-columns:1fr}
+  .compare{grid-template-columns:1fr}
+  .ov-facts{grid-template-columns:1fr 1fr}
+  .news{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .hero h1{font-size:30px}
+  .upd{grid-template-columns:1fr;gap:3px}
+  .upd .where{justify-self:start}
+  .search{display:none}
+  .head-tools .search{display:none}
+  .deep{padding:16px}
+  .hero-art{max-width:300px}
+  #toTop{right:12px;bottom:12px;width:40px;height:40px}
+  .cmt .star{margin-left:0}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+  .card:hover,.btn:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+
+<div class="sticky-stack">
+  <div class="announce" role="status">
+    <div class="wrap">
+      <span class="pip">更新</span>
+      <span class="ticker"><b>推特红人小小绘</b> 11月6日发布《夜班巴士》全彩插图，同日晚更新约稿排期至2027年1月中旬，11月7日电子设定集《雾港五号》追加两页角色草图。</span>
+    </div>
+  </div>
+  <header class="site-head">
+    <div class="wrap">
+      <a class="brand" href="/#top" aria-label="推特红人小小绘 首页">
+        <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+          <rect width="64" height="64" rx="15" fill="#c2452d"/>
+          <path d="M15 45c6.5-15 12.5-21 18.5-21 5.2 0 8.4 3.2 8.4 8.2 0 7.4-6.4 12.6-13.6 12.6h-5" fill="none" stroke="#fff6ef" stroke-width="5" stroke-linecap="round"/>
+          <circle cx="47" cy="19" r="4.6" fill="#fff6ef"/>
+        </svg>
+        <span class="bt">推特红人小小绘<small>插画档案 · 2026</small></span>
+      </a>
+      <nav class="nav" id="siteNav" aria-label="主题导航">
+        <a href="/#overview">领域概览</a>
+        <a href="/#picks">精选作品</a>
+        <a href="/#updates">最新更新</a>
+        <a href="/#channels">分类入口</a>
+        <a href="/#deep">画风解析</a>
+        <a href="/#guide">约稿指南</a>
+        <a href="/#faq">常见问题</a>
+        <a href="/#comments">读者评论</a>
+      </nav>
+      <div class="head-tools">
+        <form class="search" id="searchForm" role="search" aria-label="站内查找">
+          <input type="search" id="searchInput" placeholder="查找作品或栏目" aria-label="输入关键词查找">
+          <button type="submit" aria-label="查找">⌕</button>
+        </form>
+        <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="siteNav" aria-label="打开导航菜单"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<!-- 首屏 -->
+<div class="hero" id="top">
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <span class="hero-tag"><i></i>X 平台插画创作者 · 观察第 6 期</span>
+      <h1>推特红人<em>小小绘</em></h1>
+      <p class="lead">在X上以<b>干墨线稿＋低饱和水色</b>被认出的插画作者，账号 @xiaoxiaohui_art 粉丝约 38.6 万。作品集中在城市夜景、夜班交通工具与原创角色群像，2026年10月起把创作重心从单张约稿转向角色设定集与分镜短篇。</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/#picks">看本周精选作品</a>
+        <a class="btn btn-ghost" href="/#deep">读画风解析</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>38.6万</strong><span>X 粉丝（11月7日）</span></div>
+        <div><strong>42页</strong><span>《雾港五号》设定集</span></div>
+        <div><strong>至1月</strong><span>约稿排期已满</span></div>
+        <div><strong>6个</strong><span>原创角色</span></div>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="board"></div>
+      <div class="frame"></div>
+      <span class="chip c1">线稿笔刷 <b>干墨 6.5px</b></span>
+      <span class="chip c2">主色 <b>#c2452d</b></span>
+      <span class="chip c3">最近更新 <b>11月6日</b></span>
+      <svg viewBox="0 0 200 160" role="img">
+        <g fill="none" stroke="#241f26" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M42 132c10-26 22-40 38-44"/>
+          <path d="M80 88c6-14 16-22 28-22 16 0 26 11 26 28 0 22-17 38-38 38H74"/>
+          <path d="M120 60l16-18"/>
+          <path d="M96 118c10-6 18-14 22-24"/>
+        </g>
+        <circle cx="142" cy="34" r="8" fill="#c2452d" opacity=".85"/>
+        <circle cx="62" cy="46" r="4" fill="#2f5d62" opacity=".7"/>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<div class="wrap layout" id="main">
+  <main class="main-col">
+
+    <!-- 领域概览 -->
+    <section class="block anchor" id="overview" aria-labelledby="h-overview">
+      <div class="block-head"><span class="idx">01</span><h2 id="h-overview">领域概览：X 插画创作者的画像</h2></div>
+      <p class="sub">从账号定位、发布节奏、作品类型三个方面看，小小绘属于<b>“高频短图＋低频长企划”</b>的创作者类型，和只发约稿返图、只开付费订阅的作者有明显区别。</p>
+      <div class="overview">
+        <div class="ov-card">
+          <h3>账号与创作定位</h3>
+          <p>@xiaoxiaohui_art 于2019年注册，2022年起固定发布原创角色插画。主页简介标明了三条限制：非商业转载保留署名、商业用途私信、周边另行授权。</p>
+          <p>2026年10月25日上架《雾港五号》电子设定集，42页，Booth平台定价3000日元，首周销量标注为 1,240 份。同月把约稿单张价格从 18,000 日元调整到 22,000 日元。</p>
+        </div>
+        <div class="ov-facts">
+          <div class="fact"><span>账号名</span><strong>@xiaoxiaohui_art</strong></div>
+          <div class="fact"><span>粉丝量</span><strong>约 38.6 万</strong></div>
+          <div class="fact"><span>发布频率</span><strong>每周 3—5 张</strong></div>
+          <div class="fact"><span>主用软件</span><strong>Procreate</strong></div>
+          <div class="fact"><span>常用画幅</span><strong>A4 / A3</strong></div>
+          <div class="fact"><span>常用笔刷</span><strong>自定义干墨</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 精选内容推荐 -->
+    <section class="block anchor" id="picks" aria-labelledby="h-picks">
+      <div class="block-head"><span class="idx">02</span><h2 id="h-picks">精选作品推荐：三张值得逐块放大的图</h2></div>
+      <p class="sub">挑图的标准不是点赞数，而是能看出笔刷、色彩与构图取舍的作品。以下三张都标注了发布时间和配文的原始措辞。</p>
+      <div class="card-grid">
+        <article class="card">
+          <div class="thumb"><img src="https://picsum.photos/seed/xiaoxiaohui-nightbus/640/400" width="640" height="400" loading="lazy" alt="夜班巴士车厢内的手绘插图，坐着靠窗乘客与站立的少女"></div>
+          <div class="body">
+            <span class="tag">11月6日 · 全彩</span>
+            <h3>《夜班巴士》车厢夜景插图</h3>
+            <p>配文原文写着“最后一班，灯比人清醒”。画面用冷灰蓝车厢压住暖黄顶灯，扶手杆作为唯一贯穿斜线。发布时间 11月6日 23:41（JST）。</p>
+            <span class="meta">转推 4,120 · 喜欢 2.1 万</span>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb"><img src="https://picsum.photos/seed/xiaoxiaohui-mistport/640/400" width="640" height="400" loading="lazy" alt="雾港码头设定图，灰蓝色集装箱与橙红信号灯"></div>
+          <div class="body">
+            <span class="tag">10月25日 · 设定集</span>
+            <h3>《雾港五号》码头场景设定页</h3>
+            <p>设定集第 12—17 页的三视图，标注了集装箱编号 HK-05 与信号灯色值。作者在配文里承认参考了夜间港口的实拍照片，但没写具体地点。</p>
+            <span class="meta">Booth 首周 1,240 份</span>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb"><img src="https://picsum.photos/seed/xiaoxiaohui-raincoat/640/400" width="640" height="400" loading="lazy" alt="雨天屋檐下的原创角色半身像，橙色雨衣与深色背景"></div>
+          <div class="body">
+            <span class="tag">10月31日 · 半身</span>
+            <h3>雨衣角色「阿栖」半身像</h3>
+            <p>干墨线宽明显加粗到 6.5px，雨衣高光只用一条留白处理。评论区有画师指出肩线比设定图低了约 3 度，作者回帖确认是手滑未改。</p>
+            <span class="meta">引用转推 310 · 喜欢 1.6 万</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 最新更新 -->
+    <section class="block anchor" id="updates" aria-labelledby="h-updates">
+      <div class="block-head"><span class="idx">03</span><h2 id="h-updates">最新更新：近三周发布与排期变动</h2></div>
+      <p class="sub">按日期倒序记录了 10月18日 到 11月7日 之间可核对的动作，含发布平台与具体数字。</p>
+      <div class="updates">
+        <div class="upd"><time datetime="2026-11-07">11月7日</time><span class="txt"><b>《雾港五号》追加两页草图</b>，更新包免费，Booth 页面显示版本号由 1.0 升到 1.1。</span><span class="where">Booth</span></div>
+        <div class="upd"><time datetime="2026-11-06">11月6日</time><span class="txt"><b>发布《夜班巴士》全彩插图</b>，随后置顶排期表，半身彩稿交稿周期写明 9—12 周。</span><span class="where">X</span></div>
+        <div class="upd"><time datetime="2026-11-02">11月2日</time><span class="txt"><b>约稿价目表更新</b>，单张半身由 18,000 日元调整为 22,000 日元，背景加价另列 4,000 日元。</span><span class="where">X 置顶</span></div>
+        <div class="upd"><time datetime="2026-10-31">10月31日</time><span class="txt"><b>雨衣角色「阿栖」半身像发布</b>，同日回复肩线误差的质疑，未修图，保留原稿。</span><span class="where">X</span></div>
+        <div class="upd"><time datetime="2026-10-25">10月25日</time><span class="txt"><b>电子设定集《雾港五号》上架</b>，42 页，含 6 个角色三视图与 8 段对话片段。</span><span class="where">Booth</span></div>
+        <div class="upd"><time datetime="2026-10-18">10月18日</time><span class="txt"><b>绘图直播录屏上传</b>，时长 2 小时 46 分，全程可见干墨笔刷参数调整过程。</span><span class="where">X / 录屏</span></div>
+      </div>
+    </section>
+
+    <!-- 分类入口 -->
+    <section class="block anchor" id="channels" aria-labelledby="h-channels">
+      <div class="block-head"><span class="idx">04</span><h2 id="h-channels">分类入口：按作品类型与话题检索</h2></div>
+      <p class="sub">频道名取自搜索行为里出现频率较高的具体词，括号内为本站收录条目数。</p>
+      <div class="chips">
+        <a href="/#picks">城市夜景插画<b>18</b></a>
+        <a href="/#picks">夜班交通工具构图<b>9</b></a>
+        <a href="/#deep">干墨笔刷线稿<b>14</b></a>
+        <a href="/#picks">低饱和水色上色<b>11</b></a>
+        <a href="/#deep">原创角色三视图<b>6</b></a>
+        <a href="/#picks">雾港五号设定集<b>7</b></a>
+        <a href="/#guide">约稿价目与排期<b>5</b></a>
+        <a href="/#faq">转载与商用授权<b>4</b></a>
+        <a href="/#guide">绘图直播录屏<b>6</b></a>
+        <a href="/#news">跨平台搬运争议<b>3</b></a>
+      </div>
+    </section>
+
+    <!-- 深度解析 -->
+    <section class="block anchor" id="deep" aria-labelledby="h-deep">
+      <div class="deep">
+        <div class="kicker">深度解析</div>
+        <h2 id="h-deep">把线加粗之后，小小绘的画面反而更容易在手机屏上停住</h2>
+        <p class="standfirst">判断：2026年9月把干墨笔刷从 4px 调到 6.5px 后，单张作品的移动端完播与收藏表现并未下滑，反而在 X 信息流里更易被识别为“她画的”。这一判断可以被两组数字验证，也可能被后续分镜短篇推翻。</p>
+
+        <h3>依据一：线宽变化与发布数据的对照</h3>
+        <p>2026年7月13日发布的《便利店》场景插图，四倍放大可见线宽约 4px，转推 2,860、喜欢 1.42 万。9月28日发布《检修口》时线宽已调到 6.5px，转推 3,540、喜欢 1.88 万。两张图都是夜景、单人物、冷色底，构图密度接近，可作粗略对照。</p>
+        <table class="mini-table">
+          <caption class="sub" style="text-align:left;caption-side:top;margin-bottom:6px">两张同类型作品的基础数据对照</caption>
+          <thead><tr><th>作品</th><th>发布日期</th><th>线宽</th><th>转推</th><th>喜欢</th></tr></thead>
+          <tbody>
+            <tr><td>《便利店》</td><td>2026-07-13</td><td>约 4px</td><td>2,860</td><td>1.42 万</td></tr>
+            <tr><td>《检修口》</td><td>2026-09-28</td><td>约 6.5px</td><td>3,540</td><td>1.88 万</td></tr>
+          </tbody>
+        </table>
+        <p>不能直接归因。9月账号粉丝比7月多出约 2.4 万，涨粉本身会抬数据。作者在10月18日录屏里给出的理由也不是传播，而是印刷：A3 铜版纸印出来时 4px 线容易发虚，6.5px 在 300dpi 下更稳。这属于制作端动机，传播端结果是副产品。</p>
+
+        <h3>依据二：读者在评论里实际提到的变化</h3>
+        <p>10月31日「阿栖」半身像的评论区里，被点赞最多的三条中有两条提到线条，措辞分别是“线条粗得像炭笔”和“这次边缘好抓”。至于色彩，只有一条提到雨衣橙色饱和度比设定图低。也就是说，读者感知到的主要变化在线，不在色。</p>
+        <div class="quote">
+          “肩线比设定图低了差不多三度吧，不过这次线条是真好看，糊一点反而有雨天的味道。”
+          <cite>—— 评论原文，10月31日，点赞 412</cite>
+        </div>
+        <p>这条评论把两个信息层放在一起：一处是可核对的几何偏差，一处是主观的线条评价。作者当天回复确认手滑未改，并说明保留原稿的原因是改肩线要重画雨衣褶皱，成本高于收益。回复属于当事人说法，几何偏差本身可通过设定图对照核实。</p>
+
+        <h3>依据三：线宽与分镜短篇的冲突</h3>
+        <p>分镜短篇每页信息密度高于单张插图。6.5px 线放在 1/3 画幅的格子里，会挤掉面部细节。11月6日《夜班巴士》已经出现征兆：车厢里三个乘客的脸只用一条弧线带过。若 2027 年上线的分镜企划仍沿用 6.5px 线宽，人物辨识度可能下降。</p>
+        <p>这是可被反驳的判断。反驳的路径很具体：如果分镜按 B5 尺寸输出、观看场景从手机转为纸质翻阅，粗线反而是必要选择。作者目前没有公布分镜的成稿介质，只有 11月6日推文里一句“试试看能不能撑到 20 页”。</p>
+
+        <div class="verdict">
+          <h4>可核对结论</h4>
+          <p>线宽从 4px 到 6.5px 是可查的版本变化（10月18日录屏为证）；数据上升与涨粉并行，无法单独归因；读者感知集中在线上；分镜企划是否延续粗线，需等 2027 年 1 月后的成稿验证。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 体验指南 -->
+    <section class="block anchor" id="guide" aria-labelledby="h-guide">
+      <div class="block-head"><span class="idx">06</span><h2 id="h-guide">体验指南：第一次约稿要走的四步</h2></div>
+      <p class="sub">按 11月2日 置顶价目表的流程整理，每一步都标了容易卡住的地方。</p>
+      <div class="steps">
+        <div class="step">
+          <h3>先读置顶排期表，确认当期是否接单</h3>
+          <p>11月7日 的排期表显示 2027年1月中旬 之前已满，新单会排到1月下旬。排期表按周更新，只在 X 主页置顶，不接受私信插队。</p>
+        </div>
+        <div class="step">
+          <h3>按价目表选规格并写清用途</h3>
+          <p>半身 22,000 日元，全身 34,000 日元，背景加价 4,000 日元。价目表要求写明用途是个人收藏还是商用，商用另议。这一步最常见的退回原因是用途描述只写了“自用”两个字。</p>
+        </div>
+        <div class="step">
+          <h3>提交角色资料与参考图</h3>
+          <p>需要三视图或正面清晰图，附上禁忌项（不可改动的配饰、发色）。设定集第 40 页给了一份可参考的资料清单，共 7 项。</p>
+        </div>
+        <div class="step">
+          <h3>草稿确认后进入 9—12 周交稿周期</h3>
+          <p>草稿阶段可改两次，线稿完成后只改颜色。交稿为 PNG 300dpi，印刷用途需另行说明，作者会按 A3 尺寸检查线宽。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 对照面板 -->
+    <section class="block anchor" id="compare" aria-labelledby="h-compare">
+      <div class="block-head"><span class="idx">07</span><h2 id="h-compare">约稿方式对照：排期制与自由接单的差别</h2></div>
+      <p class="sub">同一位作者在2025年之前用过两种接单方式，下面的对照基于其2026年公开的说明与旧帖记录。</p>
+      <div class="compare">
+        <div class="panel pro">
+          <h3>排期制（2026年10月起）</h3>
+          <ul>
+            <li>交稿时间可预期，9—12 周写进价目表</li>
+            <li>价格统一，半身 22,000 日元不议价</li>
+            <li>每月放单量有限，蹲排期表是常态</li>
+            <li>商用需求需单独私信，不走公开表单</li>
+          </ul>
+        </div>
+        <div class="panel con">
+          <h3>自由接单（2025年及以前）</h3>
+          <ul>
+            <li>价格随复杂度浮动，同一规格报价可能差 6,000 日元</li>
+            <li>交稿周期不固定，最快两周、最慢三个月</li>
+            <li>改稿次数无统一上限，靠私信协商</li>
+            <li>高峰期容易积压，2025年8月曾停单一个月</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="block anchor" id="faq" aria-labelledby="h-faq">
+      <div class="block-head"><span class="idx">08</span><h2 id="h-faq">常见问题</h2></div>
+      <p class="sub">问题来自评论区与私信里被反复问到的那几类，答案只写能核实的部分。</p>
+      <div class="faq">
+        <details>
+          <summary>约稿档期一般排到多久以后？</summary>
+          <div class="a"><p>截至2026年11月8日，X 主页置顶的排期表已排到2027年1月中旬。单张半身彩稿从下单到交稿约 9 至 12 周，排期表按周在周一更新。</p></div>
+        </details>
+        <details>
+          <summary>使用什么绘画设备和软件？</summary>
+          <div class="a"><p>10月18日上传的绘图直播录屏里可以确认是 iPad Pro 12.9 英寸配合 Procreate，线稿用自定义干墨笔刷，参数在录屏第 37 分钟处调整。另有一台台式机用于设定集排版。</p></div>
+        </details>
+        <details>
+          <summary>原创角色有正式设定集吗？</summary>
+          <div class="a"><p>有。10月25日上架的《雾港五号》共 42 页，收录 6 个原创角色的三视图与 8 段对话片段。11月7日追加两页草图，已购用户可免费获取 1.1 版。</p></div>
+        </details>
+        <details>
+          <summary>为什么近期作品线条比2025年更粗？</summary>
+          <div class="a"><p>9月的直播里说明了原因：干墨笔刷尺寸从 4px 调到 6.5px，因为 A3 铜版纸印刷时细线容易发虚。10月31日「阿栖」半身像就是 6.5px 线宽的成品。</p></div>
+        </details>
+        <details>
+          <summary>转载作品需要满足哪些条件？</summary>
+          <div class="a"><p>X 主页简介写明非商业转载需保留署名与原帖链接；商业用途须先私信说明用途；周边、印刷品等衍生形式一律另行授权。11月2日的价目表里把商用加价单列为一项。</p></div>
+        </details>
+        <details>
+          <summary>《雾港五号》会出实体版吗？</summary>
+          <div class="a"><p>10月25日的上架推文只提到电子版。11月6日的回复里说实体版要看电子版销量，目前没有给日期。1,240 份的首周销量是否能支撑印刷，作者未作说明。</p></div>
+        </details>
+      </div>
+    </section>
+
+    <!-- 用户评论 -->
+    <section class="block anchor" id="comments" aria-labelledby="h-comments">
+      <div class="block-head"><span class="idx">09</span><h2 id="h-comments">读者评论：关于线宽、排期与设定集</h2></div>
+      <p class="sub">以下为评论区与转推回复的摘录，语气保留原样，包含不认同的意见。</p>
+      <div class="comments">
+        <div class="cmt">
+          <header><span class="avatar" style="background:#c2452d">林</span><span class="who">林间电车</span><span class="at">@tram_lin</span><span class="star">★★★★★</span></header>
+          <p>《夜班巴士》里扶手杆那根斜线是全图骨架，车厢顶灯偏黄、座位偏灰蓝，两种温度撞在一起，比7月那张《便利店》更耐看。</p>
+          <span class="ref">评论对象：11月6日《夜班巴士》</span>
+        </div>
+        <div class="cmt">
+          <header><span class="avatar" style="background:#2f5d62">江</span><span class="who">江北吃面</span><span class="at">@jiangbei_n</span><span class="star">★★★☆☆</span></header>
+          <p>排期排到一月实在等不动，22,000 日元对半身来说不算便宜。<em>《检修口》</em>那张我买了明信片，印出来线确实清楚，这点承认。</p>
+          <span class="ref">评论对象：11月2日价目表 / 9月28日《检修口》</span>
+        </div>
+        <div class="cmt">
+          <header><span class="avatar" style="background:#a97b23">阿</span><span class="who">阿栖的帽子</span><span class="at">@aqi_hat</span><span class="star">★★★★☆</span></header>
+          <p>肩线那三度我是真没看出来，但雨衣褶皱画得比设定集第 14 页细。<em>设定集</em>里阿栖的雨衣只有两条褶，这次画了五条，算加料。</p>
+          <span class="ref">评论对象：10月31日「阿栖」半身像 / 设定集第14页</span>
+        </div>
+        <div class="cmt">
+          <header><span class="avatar" style="background:#5b4a7a">夜</span><span class="who">夜航印刷</span><span class="at">@nightpress_k</span><span class="star">★★★★★</span></header>
+          <p>做印刷的插一句，6.5px 在 A3 300dpi 下是稳妥的，4px 确实容易虚。她9月改线宽的方向没问题，只是手机上看人物脸会糊一点。</p>
+          <span class="ref">评论对象：10月18日录屏 / 线宽调整</span>
+        </div>
+        <div class="cmt">
+          <header><span class="avatar" style="background:#8f2f1d">果</span><span class="who">果酱面包机</span><span class="at">@jam_toaster</span><span class="star">★★☆☆☆</span></header>
+          <p>设定集 42 页 3000 日元，六个人物三视图占了一大半，对话片段每段只有两三行，翻完有点空。追加的两页草图倒是实在。</p>
+          <span class="ref">评论对象：10月25日《雾港五号》</span>
+        </div>
+        <div class="cmt">
+          <header><span class="avatar" style="background:#2f5d62">小</span><span class="who">小声画图</span><span class="at">@lowvoice_draw</span><span class="star">★★★★☆</span></header>
+          <p>录屏第 37 分钟那段笔刷调参，来回试了四次才定 6.5px，能看出不是随手改的。这种过程比成图有用，希望能多传。</p>
+          <span class="ref">评论对象：10月18日绘图直播录屏</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 相关资讯 -->
+    <section class="block anchor" id="news" aria-labelledby="h-news">
+      <div class="block-head"><span class="idx">10</span><h2 id="h-news">相关资讯：同领域的三条动向</h2></div>
+      <p class="sub">选的都是与约稿生态、平台搬运、印刷规格相关的事件，各出现一次，不与上面的更新条目重复。</p>
+      <div class="news">
+        <article class="news-item">
+          <time datetime="2026-11-04">11月4日</time>
+          <h3>X 插画标签活动公布冬季场次</h3>
+          <p>平台侧的 #冬の一枚 活动定于12月1日至15日，参与者需带指定标签发布单张作品。小小绘是否参加，主页尚未表态。</p>
+        </article>
+        <article class="news-item">
+          <time datetime="2026-10-29">10月29日</time>
+          <h3>跨平台搬运账号被集中处理</h3>
+          <p>有搬运号把《检修口》裁掉水印发到短视频平台，被原作者群体投诉后删除。事件处理结果由平台公告，非当事人声明。</p>
+        </article>
+        <article class="news-item">
+          <time datetime="2026-10-22">10月22日</time>
+          <h3>A3 铜版纸小幅涨价</h3>
+          <p>日本几家按需印刷服务上调 A3 铜版纸单价约 4%，直接影响独立画师的印刷成本。小小绘的明信片定价暂未调整。</p>
+        </article>
+        <article class="news-item">
+          <time datetime="2026-10-20">10月20日</time>
+          <h3>Booth 平台调整下载期限</h3>
+          <p>电子商品下载链接的有效期改为购买后 180 天。《雾港五号》属于此类，已购用户需注意保存本地副本。</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 相关推荐 -->
+    <section class="block anchor" id="related" aria-labelledby="h-related">
+      <div class="block-head"><span class="idx">11</span><h2 id="h-related">相关推荐：继续看这些具体条目</h2></div>
+      <p class="sub">按读者常追问的方向列标签，每个标签对应站内一个可跳转的位置。</p>
+      <div class="tags">
+        <a href="/#picks">夜班巴士插图构图拆解</a>
+        <a href="/#deep">干墨笔刷 6.5px 参数</a>
+        <a href="/#faq">雾港五号设定集内容</a>
+        <a href="/#guide">小小绘约稿排期表怎么读</a>
+        <a href="/#compare">排期制与自由接单对比</a>
+        <a href="/#comments">阿栖肩线误差讨论</a>
+        <a href="/#news">A3 铜版纸印刷成本</a>
+        <a href="/#updates">11月6日更新记录</a>
+        <a href="/#faq">非商业转载署名规则</a>
+      </div>
+    </section>
+
+    <!-- 补充板块：时间线 -->
+    <section class="block anchor" id="timeline" aria-labelledby="h-timeline">
+      <div class="block-head"><span class="idx">12</span><h2 id="h-timeline">作品时间线：从单张约稿到分镜企划</h2></div>
+      <p class="sub">只列有明确日期与可核对内容的节点，传闻性说法不进入时间线。</p>
+      <div class="timeline">
+        <div class="tl"><time datetime="2026-11-06">2026-11-06</time><p><b>《夜班巴士》</b>发布，配文提到分镜企划“试试看能不能撑到20页”。</p></div>
+        <div class="tl"><time datetime="2026-10-25">2026-10-25</time><p><b>《雾港五号》</b>电子设定集上架 Booth，42 页，首周 1,240 份。</p></div>
+        <div class="tl"><time datetime="2026-09-28">2026-09-28</time><p><b>《检修口》</b>发布，线宽已调到 6.5px，是线宽变化后首张公开成图。</p></div>
+        <div class="tl"><time datetime="2026-07-13">2026-07-13</time><p><b>《便利店》</b>发布，线宽约 4px，可作前后对照。</p></div>
+        <div class="tl"><time datetime="2025-08-01">2025-08-01</time><p><b>停单一个月</b>，旧帖说明是积压过多，此后逐步转向排期制。</p></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 侧栏 -->
+  <aside class="side-col" aria-label="侧栏信息">
+    <div class="side-card side-nav">
+      <h2>本页栏目</h2>
+      <ul id="sideNavList">
+        <li><a href="/#overview">领域概览</a></li>
+        <li><a href="/#picks">精选作品推荐</a></li>
+        <li><a href="/#updates">最新更新</a></li>
+        <li><a href="/#channels">分类入口</a></li>
+        <li><a href="/#deep">深度解析</a></li>
+        <li><a href="/#guide">体验指南</a></li>
+        <li><a href="/#compare">约稿方式对照</a></li>
+        <li><a href="/#faq">常见问题</a></li>
+        <li><a href="/#comments">读者评论</a></li>
+        <li><a href="/#news">相关资讯</a></li>
+        <li><a href="/#related">相关推荐</a></li>
+        <li><a href="/#timeline">作品时间线</a></li>
+      </ul>
+      <p class="side-note">滚动时左侧对应项会高亮，点按可跳转到该板块。</p>
+    </div>
+
+    <div class="side-card">
+      <h2>信息可信度分层</h2>
+      <ul class="trust">
+        <li><span class="lv lv-a">已核对</span><span>价目表数字、设定集页数、发布日期的 X 原帖</span></li>
+        <li><span class="lv lv-b">当事人说法</span><span>线宽调整动机、肩线未改的原因</span></li>
+        <li><span class="lv lv-b">可对照</span><span>《便利店》与《检修口》的转推、喜欢数</span></li>
+        <li><span class="lv lv-c">未证实</span><span>实体版是否印刷、分镜成稿介质</span></li>
+      </ul>
+      <p class="side-note">分层只用于标出证据来源，不代表对作品本身的评价。</p>
+    </div>
+
+    <div class="side-card">
+      <h2>近期条目速览</h2>
+      <ul class="mini-list">
+        <li><b>《夜班巴士》全彩插图</b><span>11月6日 · X 发布 · 转推 4,120</span></li>
+        <li><b>《雾港五号》1.1 版</b><span>11月7日 · 追加两页草图</span></li>
+        <li><b>约稿价目表更新</b><span>11月2日 · 半身 22,000 日元</span></li>
+        <li><b>绘图直播录屏</b><span>10月18日 · 2 小时 46 分</span></li>
+      </ul>
+    </div>
+  </aside>
+</div>
+
+<div class="wrap">
+  <p class="search-feedback" id="searchFeedback" role="status"></p>
+</div>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="/#top" style="color:#fff" aria-label="回到首页顶部">
+          <svg viewBox="0 0 64 64" width="36" height="36" role="img" aria-hidden="true">
+            <rect width="64" height="64" rx="15" fill="#c2452d"/>
+            <path d="M15 45c6.5-15 12.5-21 18.5-21 5.2 0 8.4 3.2 8.4 8.2 0 7.4-6.4 12.6-13.6 12.6h-5" fill="none" stroke="#fff6ef" stroke-width="5" stroke-linecap="round"/>
+            <circle cx="47" cy="19" r="4.6" fill="#fff6ef"/>
+          </svg>
+          <span class="bt">推特红人小小绘<small>描线的人，记录线怎么变</small></span>
+        </a>
+        <p class="foot-pos">档案页关注线宽、排期与印刷这三件能查证的事，作品之外的说法一律标注来源层级。</p>
+        <p class="sample-note">页面内作品数据、评论与部分事件为示例整理，用于呈现信息结构；真实信息以作者 X 主页 @xiaoxiaohui_art 及 Booth 商品页为准。页脚更新时间为 2026-11-08，对应正文“最新更新”板块的 11月6日、11月7日条目。</p>
+      </div>
+      <div>
+        <h3>作品与解析</h3>
+        <ul class="foot-links">
+          <li><a href="/#picks">精选作品推荐</a></li>
+          <li><a href="/#deep">干墨线宽解析</a></li>
+          <li><a href="/#timeline">作品时间线</a></li>
+          <li><a href="/#channels">分类入口</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>约稿与规则</h3>
+        <ul class="foot-links">
+          <li><a href="/#guide">约稿四步流程</a></li>
+          <li><a href="/#compare">排期制对照</a></li>
+          <li><a href="/#faq">转载与商用授权</a></li>
+          <li><a href="/#updates">最新更新</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>读者区</h3>
+        <ul class="foot-links">
+          <li><a href="/#comments">读者评论</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#related">相关推荐</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 推特红人小小绘 · 插画档案</span>
+      <span>页面更新：2026-11-08</span>
+    </div>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="回到页面顶部" title="回到顶部">↑</button>
+
+<script>
+(function(){
+  "use strict";
+  var menuBtn = document.getElementById('menuBtn');
+  var nav = document.getElementById('siteNav');
+  var toTop = document.getElementById('toTop');
+  var form = document.getElementById('searchForm');
+  var input = document.getElementById('searchInput');
+  var feedback = document.getElementById('searchFeedback');
+
+  // 移动端菜单
+  if(menuBtn && nav){
+    menuBtn.addEventListener('click', function(){
+      var open = nav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A'){
+        nav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+      }
+    });
+    document.addEventListener('keydown', function(e){
+      if(e.key === 'Escape' && nav.classList.contains('open')){
+        nav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+        menuBtn.focus();
+      }
+    });
+  }
+
+  // 回到顶部
+  var onScroll = function(){
+    if(window.scrollY > 420){ toTop.classList.add('show'); }
+    else { toTop.classList.remove('show'); }
+    highlight();
+  };
+  window.addEventListener('scroll', onScroll, {passive:true});
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  // 侧栏滚动高亮
+  var links = Array.prototype.slice.call(document.querySelectorAll('#sideNavList a'));
+  var sections = links.map(function(a){
+    var id = a.getAttribute('href').replace('/#','');
+    return document.getElementById(id);
+  });
+  function highlight(){
+    var offset = 120;
+    var current = -1;
+    for(var i=0;i<sections.length;i++){
+      var s = sections[i];
+      if(s && s.getBoundingClientRect().top - offset <= 0){ current = i; }
+    }
+    links.forEach(function(a,i){
+      a.classList.toggle('active', i === current);
+    });
+  }
+  highlight();
+
+  // 本地查找
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var q = (input.value || '').trim();
+    if(!q){
+      feedback.textContent = '请输入作品名、栏目名或日期，例如“雾港五号”“排期”“11月6日”。';
+      feedback.classList.add('on');
+      return;
+    }
+    var nodes = document.querySelectorAll('main h2, main h3, main p, main summary, aside h2, aside li');
+    var hit = null;
+    for(var i=0;i<nodes.length;i++){
+      if(nodes[i].textContent.indexOf(q) !== -1){ hit = nodes[i]; break; }
+    }
+    if(hit){
+      feedback.textContent = '找到与“' + q + '”相关的内容，已定位到对应板块。';
+      feedback.classList.add('on');
+      var target = hit.closest('.anchor') || hit.closest('.block') || hit;
+      if(target && target.scrollIntoView){ target.scrollIntoView({behavior:'smooth', block:'start'}); }
+    } else {
+      feedback.textContent = '没有找到“' + q + '”。可以试试“夜班巴士”“雾港五号”“干墨笔刷”“约稿排期”这些词。';
+      feedback.classList.add('on');
+    }
+  });
+  input.addEventListener('input', function(){
+    if(!input.value.trim()){ feedback.classList.remove('on'); }
+  });
+})();
+</script>
+</body>
+              </html>
